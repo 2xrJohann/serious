@@ -93,7 +93,7 @@ Token Lexer::string() {
         }
     }
 
-    std::string_view text(start, current - start);
+    std::string_view text(start + 1, current - start - 2);
 
     return Token{TokenKind::StringLiteral, text, line, startColumn};
 }
