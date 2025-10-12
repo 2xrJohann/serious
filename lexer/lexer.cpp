@@ -128,10 +128,6 @@ char Lexer::peek() const {
     return *current;
 }
 
-char Lexer::peek() const {
-    if (isAtEnd()) return '\0';
-    return *current;
-}
 
 char Lexer::peekNext() const {
     if (current + 1 >= source.data() + source.size()) return '\0';
