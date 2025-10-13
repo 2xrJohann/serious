@@ -14,17 +14,15 @@ private:
     const char* current;
     int line;
     int column;
-    int startColumn; // pos tracking
+    int startColumn;
 
-    // utils
     bool isAtEnd() const;
     char advance();
     bool match(char expected);
     char peek() const;
     char peekNext() const;
     void skipWhitespace();
-
-    void startToken(); // pos tracking
+    void startToken();
 
     Token makeToken(TokenKind kind) const;
     Token identifier();
