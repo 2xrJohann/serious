@@ -31,6 +31,13 @@ Token Lexer::identifier() {
         {"return", TokenKind::Return},
         {"true", TokenKind::BooleanLiteral},
         {"false", TokenKind::BooleanLiteral},
+        {"switch", TokenKind::Switch},
+        {"case", TokenKind::Case},
+        {"default", TokenKind::Default},
+        {"break", TokenKind::Break},
+        {"continue", TokenKind::Continue},
+        {"import", TokenKind::Import},
+        {"export", TokenKind::Export},
     };
 
     auto it = keywords.find(text);
