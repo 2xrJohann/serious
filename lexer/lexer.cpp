@@ -21,7 +21,6 @@ Token Lexer::identifier() {
 
     std::string_view text(start, current - start);
 
-    // Updated keyword map with switch-related keywords
     static const std::unordered_map<std::string_view, TokenKind> keywords = {
         {"const", TokenKind::Const},
         {"let", TokenKind::Let},
