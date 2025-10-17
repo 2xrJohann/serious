@@ -37,6 +37,8 @@ Token Lexer::identifier() {
         {"default", TokenKind::Default},
         {"break", TokenKind::Break},
         {"continue", TokenKind::Continue},
+        {"import", TokenKind::Import},
+        {"export", TokenKind::Export},
     };
 
     auto it = keywords.find(text);

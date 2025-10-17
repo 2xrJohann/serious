@@ -11,6 +11,8 @@ enum class TokenKind {
 
     Const, Let,
 
+    Import, Export,
+
     If, Else, While, For, Return,
     Switch, Case, Default, Break, Continue,
 
