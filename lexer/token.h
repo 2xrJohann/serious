@@ -12,6 +12,7 @@ enum class TokenKind {
     Const, Let,
 
     If, Else, While, For, Return,
+    Switch, Case, Default, Break, Continue,
 
     Plus, Minus, Star, Slash, Percent,
     EqualEqual, BangEqual,
