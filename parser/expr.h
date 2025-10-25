@@ -1,7 +1,16 @@
 #pragma once
 #include <memory>
 #include <vector>
-#include "token.h"
+#include "../lexer/token.h"
+
+struct LiteralExpr;
+struct VariableExpr;
+struct BinaryExpr;
+struct UnaryExpr;
+struct GroupingExpr;
+struct IfExpr;
+struct SwitchExpr;
+struct FunctionExpr;
 
 struct ExprVisitor {
     virtual void visitLiteral(const LiteralExpr&) = 0;
